@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.lumemedia</groupId>
+    <artifactId>Translation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>main</id>
+            <name>Mario Kurz</name>
+            <url>https://mario-kurz.de/</url>
+        </developer>
+    </developers>
+
+    <repositories>
+        <!-- ClayMC Repository Server -->
+        <repository>
+            <id>claymc-release</id>
+            <url>https://nexus.claymc.net/repository/claymc-release/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- UTILS -->
+        <dependency>
+            <groupId>com.github.golgolex</groupId>
+            <artifactId>quala</artifactId>
+            <version>1.0.7</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Netty5 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty5-all</artifactId>
+            <version>5.0.0.Alpha5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- MongoDB -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.14</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
